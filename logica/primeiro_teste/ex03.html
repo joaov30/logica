@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX03</title>
+</head>
+<body>
+    <script>
+        function mostra(frase){
+            document.write(frase)
+        }
+        function pulaLinha(){
+            document.write("<br>")
+        }
+        
+        idade1 = window.prompt("digite sua idade");
+        idade2 = window.prompt("Digite a idade de seu amigo");
+        dif    = idade1 - idade2;
+
+        mostra("A sua idade é " + idade1);
+
+        pulaLinha()
+
+        mostra("A idade de seu amigo é " + idade2);
+
+        pulaLinha()
+
+        mostra("A diferença de idade entre vocês é de " + dif);
+
+
+    </script>
+
+</body>
+</html>

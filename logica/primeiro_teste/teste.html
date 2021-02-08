@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa</title>
+</head>
+<style>
+  body{
+    background: #7e2110;
+  }
+</style>
+<body>
+    <script>
+      var nome = window.prompt('Digte o seu nome')
+      var nasc = Number(window.prompt('Digite o seu ano de nascimento'))
+      var idade = 2021 - nasc
+
+      document.write(`O seu nome tem ${nome.length} Letras </br>`)
+      document.write(`Seu nome em Maisculo é ${nome.toUpperCase()} </br>`)
+      document.write(`Seu nome em Minusculo é ${nome.toLowerCase()} </br>`)
+      Number(document.write(`A sua idade é ${idade}`))
+    </script>
+</body>
+</html>

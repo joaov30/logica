@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula Consumo</title>
+</head>
+<body>
+    <h3>
+        Álcool ou Gasolina
+    </h3>
+
+    <script>
+        var tanque = window.prompt('Digite quantos litros de gasolina o seu tanque possui')
+        var caminhoComGasolina = window.prompt('Digite a distancia percorrida "apenas os numeros "')
+        var consumoDeGasolina = (caminhoComGasolina / tanque)
+
+        tanque = window.prompt('Digite quantos litros de alcool o seu tanque possui')
+        var caminhoComAlcool = window.prompt('Digite quantos litros de alcool o seu tanque possui')
+        var consumoDeAlcool = (caminhoComAlcool / tanque)
+
+
+        document.write("O consumo de gasolina é de " + consumoDeGasolina + " km/litros <br>");
+
+        document.write("O consumo de gasolina é de " + consumoDeAlcool + " km/litros")
+
+    </script>
+</body>
+</html>
