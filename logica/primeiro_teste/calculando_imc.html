@@ -26,9 +26,10 @@
 
         var imcJao = calculaImc(1.86, 126);
         var imcAmigo = calculaImc(1.72, 68);
-
-        mostra(Math.round(imcJao));
-        mostra(Math.round(imcAmigo));   
+        var totalImc = imcJao + imcAmigo
+        
+        mostra("A soma total dos IMC  é " + Math.round(totalImc));
+          
 
     </script>
 </body>
