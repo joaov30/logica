@@ -17,16 +17,18 @@
             pulaLinha()
         }
 
-        function calculaImc(altura, peso){
+        function calculaImc(altura, peso) {
 
-            var imc = peso / (altura * altura)      
-            mostra("O imc Calculado é " + Math.round(imc))
+        var imc = peso / (altura * altura);
+        return imc;
+
         }
 
-       
-        calculaImc(1.85, 128 );
+        var imcJao = calculaImc(1.86, 126);
+        var imcAmigo = calculaImc(1.72, 68);
 
-        calculaImc(1.72 , 68);
+        mostra(Math.round(imcJao));
+        mostra(Math.round(imcAmigo));   
 
     </script>
 </body>
