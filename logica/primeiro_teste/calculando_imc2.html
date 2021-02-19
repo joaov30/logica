@@ -22,11 +22,28 @@
         }
 
         var nome = window.prompt("Digite o seu nome ")
+
         var alturaInformada = window.prompt(nome + " Qual a sua altura")
-        var pesoInformado = window.prompt(nome + " Qual o seu peso")
+
+        var pesoInformado = window.prompt(nome + " Qual o seu peso ")
+
         var imc = calculaImc(alturaInformada, pesoInformado)
 
-        document.write(nome + " O seu IMC calculado é " + Math.round(imc))
+        mostra(nome + " O seu IMC calculado é " + Math.round(imc))
+
+        if  (imc < 18.5) {
+            mostra("O seu imc esta abaixo da media")
+        }
+
+        if (imc > 35 ) {
+            mostra  ("Você precisa perder peso meu amigo")
+        }
+        
+        if (imc >= 18.5 && imc <= 35) {
+
+            mostra("Seu IMC está excelente! ")
+            
+        }
 
     </script>
 </body>
