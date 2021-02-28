@@ -7,12 +7,8 @@
     <title>Copa do Mundo</title>
     <style>
         body{
-            background: url(https://imagens.ebc.com.br/FWnnd9hCLji2pydroAMGRK9nXzQ=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/copa_do_mundo_do_catar_2022.jpg?itok=LWIsI4XV) no-repeat center center fixed;
-           
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
+            background: url() wheat;
+            
         }
     </style>
 </head>
@@ -21,6 +17,7 @@
         function pulaLinha() {
 
             document.write("<br><br>")
+            document.write("<hr>")
 
         }
 
@@ -29,6 +26,17 @@
             pulaLinha()
         }
 
+        var limite = parseInt(prompt("Entre com a data limite"))
+        var anoCopa = 1930;
+
+        while (anoCopa <= limite) {
+
+            mostra("teve copa em " + anoCopa);
+            anoCopa = anoCopa + 4 ;
+        
+        }
+        
+        mostra("Fim")
 
     </script>
 </body>
