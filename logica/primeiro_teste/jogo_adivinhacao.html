@@ -28,28 +28,25 @@
 
         while(tentativas <= 3) {
 
-            var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+            var chute = parseInt(prompt("Digite seu chute"));
 
-            if(chute == numeroPensado) {
+            if (chute == numeroPensado) {
 
-            mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
-        } else {
+                mostra("Você acertou!, o número pensado era " + numeroPensado);
+                
+                break;
 
-        if(chute > numeroPensado) {
+            } else {
 
-        mostra("Você errou! Seu chute é maior que o número pensado!. O numero Sorteado foi " + numeroPensado );
+                mostra ("Você errou!")
 
-        } else {
+            }
 
-        mostra("Você errou! O numero pensado foi " + numeroPensado);
-        }
-
-        tentativas++;
-    }
-
-    }
+            tentativas++
         
+        }  
         
+        mostra("FIM");
 
         
 
