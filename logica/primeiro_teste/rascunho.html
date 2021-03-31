@@ -4,30 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Idades Familiares</title>
+    <title>Rascunho</title>
 </head>
 <body>
+   
     <script>
-        function pulaLinha(){
+        var ingredientes = [];
+    
+        var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));
+    
+        var contador = 1;
+    
+        while( contador <= quantidade) {
+    
+            var ingrediente = prompt("Informe o ingrediente " + contador);
+    
 
-            document.write("<br>")
-            document.write("<br>")
+            var existe = false;
 
-        }
+            for (var posicao = 0; posicao < ingredientes.length; posicao++){
 
-        function mostra(frase) {
-            document.write(frase)
-            pulaLinha()
-        }
+                if (ingredientes[posicao] == ingrediente) {
+                    
+                    existe = true;
+                    break;
+                }
+            }
 
-        var contador = 1
+            if(existe == false) {
 
-        while(contador <= 3) {
+                ingredientes.push(ingrediente);
+                contador++
+            }
+
             
-            alert("Deixe-me entrar!")
-            contador++
         }
-
+    
+        console.log(ingredientes);
     </script>
+
 </body>
 </html>
