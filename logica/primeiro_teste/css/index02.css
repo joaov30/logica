@@ -1,0 +1,76 @@
+header h1 {
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgb(59, 42, 138);
+    border-style: solid;
+    border-radius: 22px;
+    border-color: black;
+
+}
+
+
+main ul li a {
+
+    padding: 2px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+
+}
+
+main a:hover {
+
+    color: rgb(209, 198, 255);
+    text-decoration: underline overline;
+
+
+}
+
+body {
+
+    position: fixed;
+    background: url("../img/touhou.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+footer {
+    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(59, 42, 138);
+    color: white;
+    text-align: center;
+    
+}
+
+footer h1 {
+
+    text-align: center;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+
+}
+
+footer h1 a {
+
+    color: inherit;
+
+}
+
+footer h1:hover {
+
+    color: rgb(209, 198, 255);
+    transform: scale(1.2);
+
+    }
