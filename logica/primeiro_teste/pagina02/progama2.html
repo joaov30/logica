@@ -13,7 +13,7 @@
     <script>
 
 
-        function drawSquare(x, y, color, stroke) {
+        function drawSquare(x, y, color,) {
 
         var tela = document.querySelector ('canvas');
         var pincel = tela.getContext('2d');
@@ -21,15 +21,26 @@
         pincel.fillStyle = color;
         pincel.fillRect(x, y, 50, 50);
         pincel.fillStroke = "black";
-        pincel.strokeStyle = stroke ;
         pincel.strokeRect(x, y, 50, 50);
     }
 
-    
 
-        drawSquare(0, 0, "yellow", "green");
-        drawSquare(50, 50, "blue", "yellow");
-        drawSquare(100, 100, "red", "black");
+/*
+    var x = 0;
+    
+    while(x < 600) {
+
+        drawSquare(x, 0, "yellow");
+       
+        x = x + 50 ; 
+    }
+    */
+
+    for(var x = 0; x < 600;  x = x + 50) {
+
+        drawSquare(x, 0, "yellow");
+
+    }
 
     </script>
 </body>
