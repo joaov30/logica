@@ -18,14 +18,14 @@
         pincel.fillStyle = 'grey';
         pincel.fillRect (0, 0, 600, 400);
 
-        var cores = ['blue', 'yellow', 'red']
+        var cores = ['blue', 'red', 'green']
         var contadorDeCores = 0;
 
         function desenhaPonto(evento){
 
             var x = evento.pageX - tela.offsetLeft;
             var y = evento.pageY - tela.offsetTop;
-            pincel.fillStyle = 'blue';
+            pincel.fillStyle = cores[contadorDeCores];
             pincel.beginPath();
             pincel.arc(x, y, 10, 0, 2* 3.14);
             pincel.fill();
@@ -36,6 +36,19 @@
         tela.onclick = desenhaPonto;
 
 
+        function mudaCor(){
+
+            contadorDeCores++;
+
+           if(contadorDeCores >= cores.length){
+               contadorDeCores = 0;
+           }
+            
+            
+            return false;
+            }
+
+        tela.oncontextmenu = mudaCor;
 
 
     </script>
