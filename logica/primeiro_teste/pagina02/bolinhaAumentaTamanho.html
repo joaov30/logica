@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rascunho</title>
+    <title>Bolinha aumenta tamanho</title>
 </head>
 <body>
     <canvas width="600" height="400"></canvas>
     <canvas width="600" height="400"></canvas>
 
     <script>
+
+        function mensagem(frase){
+        alert(frase);
+
+    }
         
         var tela = document.querySelector('canvas');
         var pincel = tela.getContext('2d');
@@ -56,6 +61,13 @@
             }
 
         tela.oncontextmenu = mudaCor;
+
+        mensagem("Clique na tela cinza para desenha uma Bolinha 😏");
+
+        mensagem("Você pode mudar a cor da bolinha clicando com o botão direito do mouse 😋")
+
+        mensagem("Segure o shift ao clicar para cirar uma bolinha maior 👍");
+
 
         
     </script>
