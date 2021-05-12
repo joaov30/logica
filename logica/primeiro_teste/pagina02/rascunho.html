@@ -25,11 +25,18 @@
 
             var x = evento.pageX - tela.offsetLeft;
             var y = evento.pageY - tela.offsetTop;
+            
             pincel.fillStyle = cores[contadorDeCores];
             pincel.beginPath();
             pincel.arc(x, y, 10, 0, 2* 3.14);
             pincel.fill();
             console.log(x + ',' + y);
+
+            if(evento.shiftKey){
+                pincel.beginPath();
+                pincel.arc(x, y, 20, 0, 2* 3.14);
+                pincel.fill();
+            }
 
         }
 
@@ -50,7 +57,7 @@
 
         tela.oncontextmenu = mudaCor;
 
-
+        
     </script>
 </body>
 </html>
