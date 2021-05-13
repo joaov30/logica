@@ -18,7 +18,7 @@
 
         var desenha = false;
 
-        function desenhaCirculo(evento) {
+        tela.onmousemove = function(evento) {
 
             if(desenha) {
                 var x = evento.pageX - tela.offsetLeft;
@@ -31,21 +31,19 @@
             console.log(x + ',' + y);
         }
 
-        tela.onmousemove = desenhaCirculo;
+        
 
-        function habilitaDesenhar() {
+        tela.onmousedown = function () {
 
             desenha = true;
         }
 
-        function desabilitaDesenhar() {
+        tela.onmouseup = function () {
 
             desenha = false;
         }
 
-        tela.onmousedown = habilitaDesenhar;
-
-        tela.onmouseup = desabilitaDesenhar;
+    
 
     </script> 
 </body>
