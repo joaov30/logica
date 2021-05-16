@@ -29,6 +29,32 @@
         pincel.clearRect(0, 0, 600, 400);
     }
 
+    var raio = 19;
+
+    var fatorCrescimento = 0;
+
+    function atualizaTela() {
+
+        // limpamos sempre a tela para podermos desenhar um novo círculo
+        limpaTela();
+
+        if(raio > 30) {
+            // o raio tem que diminuir
+            fatorCrescimento = -1;
+        } else if (raio < 20) {
+            // o raio tem que aumentar
+            fatorCrescimento = 1;
+        }
+
+        raio = raio + fatorCrescimento;
+
+        desenhaCirculo(300, 200, raio, 'blue');
+    }
+
+    setInterval(atualizaTela, 20);
+
+        
+
 </script>
 
 </body>
